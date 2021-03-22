@@ -14,7 +14,7 @@ function App() {
               <Introduction/>
               <h1 className="center project-header"  id="here">Project</h1>
               <Grid/>
-
+              <Footer/>
         </div>
       </Route>
     </Router>
