@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+html {
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Hind", 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1rem; }
+
+.page {
+  height: 100vh; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.center {
+  text-align: center; }
+
+.grid {
+  display: grid; }
+
+.card {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px; }
+
+.text-white {
+  color: white; }

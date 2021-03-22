@@ -1,0 +1,318 @@
+$black : #000;
+$white : #fff;
+$header-height:375px;
+.App{
+    
+}
+.introduction{
+    justify-content: center;
+    align-items: center;
+    background: url("../svg/SpaceBG.svg")  no-repeat  center ;
+    background-size: cover;
+}
+.header-pos{
+    width:$header-height;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    color:$white;
+    .line{
+        align-self: flex-start;
+        border-top:3px solid $white;
+        animation: changewidth 2s ease-out 1 forwards;
+    }
+    h2{
+        font-size:2.75rem;
+        font-weight: normal;
+    }
+    p{
+        font-size:2rem;
+    }
+    button{
+        margin:20px;
+        padding:6px;
+        font-size:1rem;
+        border: 2px  solid $white ;
+        border-radius: 6px;
+        transition: all 0.25s ease-out 0.1s;
+        &:focus{
+            outline:none;
+        }
+        &:hover{
+            background:rgba(255,255,255,0.9);
+            color:$black;
+        }
+    }
+    
+}
+.project-header{
+    margin: 20px auto;
+    padding:15px;
+    font-size: 2rem;
+}
+.grid-showcase{
+   display: grid;
+   grid-template-columns: 60% 40%;
+   .flex-column.card{
+        width:90px;
+   }
+   .card img{
+       height:75px;
+
+   }
+
+   .gitlink{
+       img{
+           margin:10px 5px;
+           height:50px;
+           width:auto;
+       }
+   }
+   .card{
+       margin:5px 7.5px 5px 0px;
+       padding:0 7.5px;
+       align-items: center;
+       h4{
+           width:100%;
+       }
+   }
+
+}
+.left-showcase{
+    margin:20px;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+    .showcase-desc{
+        grid-column:2;
+    }
+    .showcase-image{
+        width:100%;
+        grid-row:1;
+        grid-column:1;
+    }
+    video{
+        grid-row:1;
+        grid-column:1;
+    }
+    .showcase-desc-text{
+        margin:20px;
+    }
+    h3{
+        margin:10px 0 0 0;
+    }
+}
+.right-showcase{
+    margin:20px;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    .showcase-image{
+        width:100%;
+  
+    }
+    .showcase-desc-text{
+        margin:20px;
+        h2{
+            text-align: end;
+        }
+        h3{
+            margin:10px 0 0 0;
+            text-align: end; 
+        }
+        p{
+            text-align: end;
+        }
+        .flex{
+            justify-content: flex-end;
+         
+        }
+        .card{
+            margin:5px 0px 5px 7.5px;
+            padding:0 7.5px;
+            align-items: center;
+        
+        }
+    }
+}
+.showcase{
+    video{
+        width:100%;
+
+    }
+}
+.footer{
+    overflow:auto;
+    padding:0 50px;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        height:60px;
+    }
+    &.flex{
+        align-items: center;
+    }
+    height:150px;
+    background-color:#103D7D;
+}
+@keyframes changewidth {
+    from {width:0%}
+    to {width:100%}
+}
+@media only screen and (max-width: 1200px) {
+    .grid-showcase{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        .flex{
+            justify-content: center;
+        }
+        .flex-column.card{
+             width:90px;
+        }
+        .card img{
+            height:75px;
+        }
+     
+        .gitlink{
+            img{
+                margin:10px 5px;
+                height:50px;
+                width:auto;
+            }
+        }
+        .card{
+            margin:5px 7.5px 5px 0px;
+            padding:0 7.5px;
+            align-items: center;
+            h4{
+                width:100%;
+            }
+        }
+        video,img{
+            width:600px;
+        }
+        .card img{
+            height:75px;
+            width:auto;
+        }
+        p{
+            width:600px;
+        }
+     }
+     .right-showcase{
+        margin:20px;
+        .showcase-desc-text{
+            justify-content: center;
+            align-items: center;
+            margin:20px;
+            p{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            .flex{
+                justify-content: center;
+            }
+           
+        }
+     
+    }
+    .left-showcase{
+        margin:20px;
+        .showcase-image{
+            width:600px;
+         
+        }
+        .showcase-desc-text{
+            margin:20px;
+        }
+        h3{
+            margin:10px 0 0 0;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid-showcase{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        .flex{
+            justify-content: center;
+        }
+        .flex-column.card{
+             width:90px;
+        }
+        .card img{
+            height:75px;
+        }
+     
+        .gitlink{
+            img{
+                margin:10px 5px;
+                height:50px;
+                width:auto;
+            }
+        }
+        .card{
+            margin:5px 7.5px 5px 0px;
+            padding:0 7.5px;
+            align-items: center;
+            h4{
+                width:100%;
+            }
+        }
+        video,img{
+            width:100%;
+        }
+        .card img{
+            height:75px;
+            width:auto;
+        }
+        p{
+            width:100%;
+        }
+     }
+     .right-showcase{
+        margin:20px;
+        .showcase-desc-text{
+            justify-content: center;
+            align-items: center;
+            margin:20px;
+            p{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            .flex{
+                justify-content: center;
+            }
+           
+        }
+    
+    
+    }
+    .left-showcase{
+        margin:20px;
+        .showcase-image{
+            width:100%;
+         
+        }
+        .showcase-desc-text{
+            margin:20px;
+        }
+        h3{
+            margin:10px 0 0 0;
+        }
+    }
+}
+

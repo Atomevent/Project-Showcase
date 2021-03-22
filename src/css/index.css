@@ -1,0 +1,223 @@
+.introduction {
+  justify-content: center;
+  align-items: center;
+  background: url("../svg/SpaceBG.svg") no-repeat center;
+  background-size: cover; }
+
+.header-pos {
+  width: 375px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+  color: #fff; }
+  .header-pos .line {
+    align-self: flex-start;
+    border-top: 3px solid #fff;
+    animation: changewidth 2s ease-out 1 forwards; }
+  .header-pos h2 {
+    font-size: 2.75rem;
+    font-weight: normal; }
+  .header-pos p {
+    font-size: 2rem; }
+  .header-pos button {
+    margin: 20px;
+    padding: 6px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    transition: all 0.25s ease-out 0.1s; }
+    .header-pos button:focus {
+      outline: none; }
+    .header-pos button:hover {
+      background: rgba(255, 255, 255, 0.9);
+      color: #000; }
+
+.project-header {
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 2rem; }
+
+.grid-showcase {
+  display: grid;
+  grid-template-columns: 60% 40%; }
+  .grid-showcase .flex-column.card {
+    width: 90px; }
+  .grid-showcase .card img {
+    height: 75px; }
+  .grid-showcase .gitlink img {
+    margin: 10px 5px;
+    height: 50px;
+    width: auto; }
+  .grid-showcase .card {
+    margin: 5px 7.5px 5px 0px;
+    padding: 0 7.5px;
+    align-items: center; }
+    .grid-showcase .card h4 {
+      width: 100%; }
+
+.left-showcase {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .left-showcase .showcase-desc {
+    grid-column: 2; }
+  .left-showcase .showcase-image {
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1; }
+  .left-showcase video {
+    grid-row: 1;
+    grid-column: 1; }
+  .left-showcase .showcase-desc-text {
+    margin: 20px; }
+  .left-showcase h3 {
+    margin: 10px 0 0 0; }
+
+.right-showcase {
+  margin: 20px;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .right-showcase .showcase-image {
+    width: 100%; }
+  .right-showcase .showcase-desc-text {
+    margin: 20px; }
+    .right-showcase .showcase-desc-text h2 {
+      text-align: end; }
+    .right-showcase .showcase-desc-text h3 {
+      margin: 10px 0 0 0;
+      text-align: end; }
+    .right-showcase .showcase-desc-text p {
+      text-align: end; }
+    .right-showcase .showcase-desc-text .flex {
+      justify-content: flex-end; }
+    .right-showcase .showcase-desc-text .card {
+      margin: 5px 0px 5px 7.5px;
+      padding: 0 7.5px;
+      align-items: center; }
+
+.showcase video {
+  width: 100%; }
+
+.footer {
+  overflow: auto;
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: #103D7D; }
+  .footer img {
+    height: 60px; }
+  .footer.flex {
+    align-items: center; }
+
+@keyframes changewidth {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  .grid-showcase {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .grid-showcase .flex {
+      justify-content: center; }
+    .grid-showcase .flex-column.card {
+      width: 90px; }
+    .grid-showcase .card img {
+      height: 75px; }
+    .grid-showcase .gitlink img {
+      margin: 10px 5px;
+      height: 50px;
+      width: auto; }
+    .grid-showcase .card {
+      margin: 5px 7.5px 5px 0px;
+      padding: 0 7.5px;
+      align-items: center; }
+      .grid-showcase .card h4 {
+        width: 100%; }
+    .grid-showcase video, .grid-showcase img {
+      width: 600px; }
+    .grid-showcase .card img {
+      height: 75px;
+      width: auto; }
+    .grid-showcase p {
+      width: 600px; }
+  .right-showcase {
+    margin: 20px; }
+    .right-showcase .showcase-desc-text {
+      justify-content: center;
+      align-items: center;
+      margin: 20px; }
+      .right-showcase .showcase-desc-text p {
+        text-align: center; }
+      .right-showcase .showcase-desc-text h2 {
+        text-align: center; }
+      .right-showcase .showcase-desc-text .flex {
+        justify-content: center; }
+  .left-showcase {
+    margin: 20px; }
+    .left-showcase .showcase-image {
+      width: 600px; }
+    .left-showcase .showcase-desc-text {
+      margin: 20px; }
+    .left-showcase h3 {
+      margin: 10px 0 0 0; } }
+
+@media only screen and (max-width: 600px) {
+  .grid-showcase {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .grid-showcase .flex {
+      justify-content: center; }
+    .grid-showcase .flex-column.card {
+      width: 90px; }
+    .grid-showcase .card img {
+      height: 75px; }
+    .grid-showcase .gitlink img {
+      margin: 10px 5px;
+      height: 50px;
+      width: auto; }
+    .grid-showcase .card {
+      margin: 5px 7.5px 5px 0px;
+      padding: 0 7.5px;
+      align-items: center; }
+      .grid-showcase .card h4 {
+        width: 100%; }
+    .grid-showcase video, .grid-showcase img {
+      width: 100%; }
+    .grid-showcase .card img {
+      height: 75px;
+      width: auto; }
+    .grid-showcase p {
+      width: 100%; }
+  .right-showcase {
+    margin: 20px; }
+    .right-showcase .showcase-desc-text {
+      justify-content: center;
+      align-items: center;
+      margin: 20px; }
+      .right-showcase .showcase-desc-text p {
+        text-align: center; }
+      .right-showcase .showcase-desc-text h2 {
+        text-align: center; }
+      .right-showcase .showcase-desc-text .flex {
+        justify-content: center; }
+  .left-showcase {
+    margin: 20px; }
+    .left-showcase .showcase-image {
+      width: 100%; }
+    .left-showcase .showcase-desc-text {
+      margin: 20px; }
+    .left-showcase h3 {
+      margin: 10px 0 0 0; } }
